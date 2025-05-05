@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="habit_tracker_db@localhost" uuid="a08ac94a-ed88-4042-87fb-100b8fe2b5bd">
+    <data-source source="LOCAL" name="habit_tracker_db@localhost [2]" uuid="7cebc632-ffd9-4a6d-add2-5126ebe3b33e">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
