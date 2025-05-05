@@ -5,10 +5,10 @@ from fastapi.params import Depends
 from sqlalchemy.orm import Session
 from typing import Annotated
 from starlette import status
-from database import SessionLocal
+from ..database import SessionLocal
 from passlib.context import CryptContext
-from schemas import CreateUserRequest, Token
-from models import Users
+from ..schemas import CreateUserRequest, Token
+from ..models import Users
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import jwt, JWTError
 import os

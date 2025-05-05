@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-import models
-from database import engine
-from routers import user, habits, habit_logs
+from . import models
+from .database import engine
+from .routers import user, habits, habit_logs
 
 app = FastAPI()
 

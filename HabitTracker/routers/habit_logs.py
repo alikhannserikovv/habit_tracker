@@ -4,9 +4,9 @@ from fastapi.params import Depends
 from sqlalchemy.orm import Session
 from typing import Annotated
 from starlette import status
-from database import SessionLocal
-from schemas import HabitLogOut, HabitLogRequest
-from models import HabitLogs, Habits
+from ..database import SessionLocal
+from ..schemas import HabitLogOut, HabitLogRequest
+from ..models import HabitLogs, Habits
 from .user import get_current_user
 
 router = APIRouter(

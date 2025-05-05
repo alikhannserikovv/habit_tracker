@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from sqlalchemy.orm import relationship
-from database import Base
+from .database import Base
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Text
 
 
@@ -23,7 +23,7 @@ class Habits(Base):
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
 
     user = relationship("Users", back_populates="habit")
-    logs = relationship("HabitLogs", back_populates="habit")
+    logs = relationship("HabitLogs", back_populates="habit", cascade="all, delete")
 
 class HabitLogs(Base):
     __tablename__ = 'habit_logs'
