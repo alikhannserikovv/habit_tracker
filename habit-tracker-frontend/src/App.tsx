@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import HabitDetail from './pages/HabitDetail';
+import { HabitDetail } from './pages/HabitDetail';
 import Statistics from './pages/Statistics';
 import Header from './components/Header';
 import './index.css';
