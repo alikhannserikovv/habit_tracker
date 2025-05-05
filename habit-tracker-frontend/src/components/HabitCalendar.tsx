@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isToday, isSameDay, addMonths, subMonths } from 'date-fns';
-import { HabitLog } from '../types/index';
+import { HabitLog } from '../types';
 import { habitApi } from '../api/api';
 
 interface HabitCalendarProps {
